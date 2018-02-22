@@ -1,8 +1,11 @@
 {
   "name": "ng-action",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "homepage": "https://github.com/KimSunWook/ngAction",
-  "main": "ngAction.js",
+  "main": [
+    "ngAction.js",
+    "ngAction.min.js"
+  ],
   "authors": [
     "Kim Sun Wook <sunus7@naver.com>"
   ],
@@ -45,7 +48,8 @@
     "granim": "^1.1.0",
     "reset.css": "^1.0.2",
     "ng-gradient": "^1.0.1",
-    "angular-fullpage.js": "^0.2.1"
+    "angular-fullpage.js": "^0.2.1",
+    "ng-action": "ngAction#^1.0.1"
   },
   "resolutions": {
     "angular": "~1.5.8",
@@ -54,14 +58,14 @@
     "angular-route": "~1.5.8",
     "angular-sanitize": "~1.5.8"
   },
-  "_release": "1.0.1",
+  "_release": "1.0.2",
   "_resolution": {
     "type": "version",
-    "tag": "v1.0.1",
-    "commit": "faf7165844987b94c38980d1ac83e0f97acb4071"
+    "tag": "v1.0.2",
+    "commit": "f8ebce2286b31211cc62619f3d834742d07257ca"
   },
   "_source": "https://github.com/KimSunWook/ngAction.git",
-  "_target": "^1.0.1",
+  "_target": "^1.0.2",
   "_originalSource": "ngAction",
   "_direct": true
 }

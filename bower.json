@@ -2,7 +2,10 @@
   "name": "ng-action",
   "version": "1.0.2",
   "homepage": "https://github.com/KimSunWook/ngAction",
-  "main": ["ngAction.js", "ngAction.min.js"],
+  "main": [
+    "ngAction.js",
+    "ngAction.min.js"
+  ],
   "authors": [
     "Kim Sun Wook <sunus7@naver.com>"
   ],
@@ -46,7 +49,7 @@
     "reset.css": "^1.0.2",
     "ng-gradient": "^1.0.1",
     "angular-fullpage.js": "^0.2.1",
-    "ng-action": "ngAction#^1.0.1"
+    "ng-action": "ngAction#^1.0.2"
   },
   "resolutions": {
     "angular": "~1.5.8",
