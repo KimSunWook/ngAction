@@ -1,0 +1,5 @@
+div, img, i, span {
+  position: relative;
+  float: left;
+  display: block;
+}
