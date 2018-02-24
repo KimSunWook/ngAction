@@ -1,10 +1,9 @@
 {
   "name": "ng-action",
-  "version": "1.0.2",
+  "version": "1.0.4",
   "homepage": "https://github.com/KimSunWook/ngAction",
   "main": [
-    "ngAction.js",
-    "ngAction.min.js"
+    "ngAction.js"
   ],
   "authors": [
     "Kim Sun Wook <sunus7@naver.com>"
