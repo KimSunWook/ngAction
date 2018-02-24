@@ -50,12 +50,5 @@
     "ng-gradient": "^1.0.1",
     "angular-fullpage.js": "^0.2.1",
     "ng-action": "ngAction#^1.0.2"
-  },
-  "resolutions": {
-    "angular": "~1.5.8",
-    "angular-cookies": "~1.5.8",
-    "angular-resource": "~1.5.8",
-    "angular-route": "~1.5.8",
-    "angular-sanitize": "~1.5.8"
   }
 }
