@@ -1,6 +1,6 @@
 (function(angular) {
   angular.module('ngAction', ['ng'])
-  .directive("ngAction", function ($rootScope, $timeout) {
+  .directive("ngAction", [ '$rootScope', '$timeout', function ($rootScope, $timeout) {
 		return {
       link: function (scope, element, attrs) {
 
@@ -39,9 +39,10 @@
 
              // Set $click false after duration
              var duration = Number(attrs.ngActionDuration);
-             if(!(duration>=0)) duration = 100;
+             if(!(duration>=0)) duration = 700;
              timeout_click = $timeout(function(){
                model.$click = false;
+               scope.$eval(attrs.ngActionClickAfter);
              }, duration);
            }
          });
@@ -62,9 +63,10 @@
 
              // Set $hover false after duration
              var duration = Number(attrs.ngActionDuration);
-             if(!(duration>=0)) duration = 100;
+             if(!(duration>=0)) duration = 700;
              timeout_hover = $timeout(function(){
                model.$hover = false;
+               scope.$eval(attrs.ngActionHoverAfter);
              }, duration);
            }
          });
@@ -85,9 +87,10 @@
 
              // Set $focus false after duration
              var duration = Number(attrs.ngActionDuration);
-             if(!(duration>=0)) duration = 100;
+             if(!(duration>=0)) duration = 700;
              timeout_focus = $timeout(function(){
                model.$focus = false;
+               scope.$eval(attrs.ngActionFocusAfter);
              }, duration);
            }
          });
@@ -97,4 +100,4 @@
 			restrict:"EA"
 		};
 	});
-})(angular);
+}])(angular);
