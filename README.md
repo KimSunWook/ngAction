@@ -33,7 +33,7 @@ Copy-paste the ```<script>``` into your ```<body>```.
 ```
 or
 ```
-<script src="https://cdn.rawgit.com/KimSunWook/ngAction/v1.1.2/ngAction.js"></script>
+<script src="https://cdn.rawgit.com/KimSunWook/ngAction/v1.1.3/ngAction.js"></script>
 ```
 
 <br/>
