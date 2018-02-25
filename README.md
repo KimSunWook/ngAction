@@ -37,11 +37,11 @@ or
 ```
 or
 ```
-<script src="https://cdn.rawgit.com/KimSunWook/ngAction/v1.0.1/ngAction.js"></script>
+<script src="https://cdn.rawgit.com/KimSunWook/ngAction/v1.1.0/ngAction.js"></script>
 ```
 or
 ```
-<script src="https://cdn.rawgit.com/KimSunWook/ngAction/v1.0.1/ngAction.min.js"></script>
+<script src="https://cdn.rawgit.com/KimSunWook/ngAction/v1.1.0/ngAction.min.js"></script>
 ```
 
 <br/>

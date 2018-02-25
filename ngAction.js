@@ -4,14 +4,28 @@
 		return {
       link: function (scope, element, attrs) {
 
+        var getModel = function(){
+          // Set model
+          var model;
+          if(scope.$eval(attrs.ngActionModel)){
+            model = scope.$eval(attrs.ngActionModel);
+          }
+          else{
+            if(attrs.ngActionModel){
+              scope[attrs.ngActionModel] = {};
+              model = scope[attrs.ngActionModel];
+            }
+            else{
+              model = scope;
+            }
+          }
+          return model;
+        };
+
         // Listen to keypress event
          var timeout_click;
          angular.element(element).bind("click", function(event) {
-           // Set model
-           var model;
-           if(scope.$eval(attrs.ngActionModel)) model = scope.$eval(attrs.ngActionModel);
-           else model = scope;
-
+           var model = getModel();
            // $click 가 false 나 undefined 일때만 작동
            // ( 연속해서 true 로 멈춰있는 경우 방지 )
            if(!model.$click){
@@ -34,11 +48,7 @@
 
          var timeout_hover;
          angular.element(element).bind("mouseenter", function(event) {
-           // Set model
-           var model;
-           if(scope.$eval(attrs.ngActionModel)) model = scope.$eval(attrs.ngActionModel);
-           else model = scope;
-
+           var model = getModel();
            // $hover 가 false 나 undefined 일때만 작동
            // ( 연속해서 true 로 멈춰있는 경우 방지 )
            if(!model.$hover){
@@ -61,11 +71,7 @@
 
          var timeout_focus;
          angular.element(element).bind("focus", function(event) {
-           // Set model
-           var model;
-           if(scope.$eval(attrs.ngActionModel)) model = scope.$eval(attrs.ngActionModel);
-           else model = scope;
-
+           var model = getModel();
            // $focus 가 false 나 undefined 일때만 작동
            // ( 연속해서 true 로 멈춰있는 경우 방지 )
            if(!model.$focus){
